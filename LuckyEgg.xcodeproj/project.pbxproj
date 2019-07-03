@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F3F9A29422CC4F26002870CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F9A29322CC4F26002870CC /* AppDelegate.m */; };
+		F3F9A29722CC4F26002870CC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F9A29622CC4F26002870CC /* ViewController.m */; };
+		F3F9A29A22CC4F26002870CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3F9A29822CC4F26002870CC /* Main.storyboard */; };
+		F3F9A29C22CC4F28002870CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3F9A29B22CC4F28002870CC /* Assets.xcassets */; };
+		F3F9A29F22CC4F28002870CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3F9A29D22CC4F28002870CC /* LaunchScreen.storyboard */; };
+		F3F9A2A222CC4F28002870CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F9A2A122CC4F28002870CC /* main.m */; };
+		F3F9A2AC22CC4F28002870CC /* LuckyEggTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F9A2AB22CC4F28002870CC /* LuckyEggTests.m */; };
+		F3F9A2B722CC4F28002870CC /* LuckyEggUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F9A2B622CC4F28002870CC /* LuckyEggUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F3F9A2A822CC4F28002870CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3F9A28722CC4F26002870CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3F9A28E22CC4F26002870CC;
+			remoteInfo = LuckyEgg;
+		};
+		F3F9A2B322CC4F28002870CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3F9A28722CC4F26002870CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3F9A28E22CC4F26002870CC;
+			remoteInfo = LuckyEgg;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F3F9A28F22CC4F26002870CC /* LuckyEgg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuckyEgg.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3F9A29222CC4F26002870CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F3F9A29322CC4F26002870CC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F3F9A29522CC4F26002870CC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F3F9A29622CC4F26002870CC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F3F9A29922CC4F26002870CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F3F9A29B22CC4F28002870CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3F9A29E22CC4F28002870CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F3F9A2A022CC4F28002870CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3F9A2A122CC4F28002870CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F3F9A2A722CC4F28002870CC /* LuckyEggTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuckyEggTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3F9A2AB22CC4F28002870CC /* LuckyEggTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LuckyEggTests.m; sourceTree = "<group>"; };
+		F3F9A2AD22CC4F28002870CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3F9A2B222CC4F28002870CC /* LuckyEggUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuckyEggUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3F9A2B622CC4F28002870CC /* LuckyEggUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LuckyEggUITests.m; sourceTree = "<group>"; };
+		F3F9A2B822CC4F28002870CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3F9A28C22CC4F26002870CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3F9A2A422CC4F28002870CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3F9A2AF22CC4F28002870CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F3F9A28622CC4F26002870CC = {
+			isa = PBXGroup;
+			children = (
+				F3F9A29122CC4F26002870CC /* LuckyEgg */,
+				F3F9A2AA22CC4F28002870CC /* LuckyEggTests */,
+				F3F9A2B522CC4F28002870CC /* LuckyEggUITests */,
+				F3F9A29022CC4F26002870CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F3F9A29022CC4F26002870CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3F9A28F22CC4F26002870CC /* LuckyEgg.app */,
+				F3F9A2A722CC4F28002870CC /* LuckyEggTests.xctest */,
+				F3F9A2B222CC4F28002870CC /* LuckyEggUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3F9A29122CC4F26002870CC /* LuckyEgg */ = {
+			isa = PBXGroup;
+			children = (
+				F3F9A29222CC4F26002870CC /* AppDelegate.h */,
+				F3F9A29322CC4F26002870CC /* AppDelegate.m */,
+				F3F9A29522CC4F26002870CC /* ViewController.h */,
+				F3F9A29622CC4F26002870CC /* ViewController.m */,
+				F3F9A29822CC4F26002870CC /* Main.storyboard */,
+				F3F9A29B22CC4F28002870CC /* Assets.xcassets */,
+				F3F9A29D22CC4F28002870CC /* LaunchScreen.storyboard */,
+				F3F9A2A022CC4F28002870CC /* Info.plist */,
+				F3F9A2A122CC4F28002870CC /* main.m */,
+			);
+			path = LuckyEgg;
+			sourceTree = "<group>";
+		};
+		F3F9A2AA22CC4F28002870CC /* LuckyEggTests */ = {
+			isa = PBXGroup;
+			children = (
+				F3F9A2AB22CC4F28002870CC /* LuckyEggTests.m */,
+				F3F9A2AD22CC4F28002870CC /* Info.plist */,
+			);
+			path = LuckyEggTests;
+			sourceTree = "<group>";
+		};
+		F3F9A2B522CC4F28002870CC /* LuckyEggUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F3F9A2B622CC4F28002870CC /* LuckyEggUITests.m */,
+				F3F9A2B822CC4F28002870CC /* Info.plist */,
+			);
+			path = LuckyEggUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3F9A28E22CC4F26002870CC /* LuckyEgg */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3F9A2BB22CC4F28002870CC /* Build configuration list for PBXNativeTarget "LuckyEgg" */;
+			buildPhases = (
+				F3F9A28B22CC4F26002870CC /* Sources */,
+				F3F9A28C22CC4F26002870CC /* Frameworks */,
+				F3F9A28D22CC4F26002870CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LuckyEgg;
+			productName = LuckyEgg;
+			productReference = F3F9A28F22CC4F26002870CC /* LuckyEgg.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F3F9A2A622CC4F28002870CC /* LuckyEggTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3F9A2BE22CC4F28002870CC /* Build configuration list for PBXNativeTarget "LuckyEggTests" */;
+			buildPhases = (
+				F3F9A2A322CC4F28002870CC /* Sources */,
+				F3F9A2A422CC4F28002870CC /* Frameworks */,
+				F3F9A2A522CC4F28002870CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3F9A2A922CC4F28002870CC /* PBXTargetDependency */,
+			);
+			name = LuckyEggTests;
+			productName = LuckyEggTests;
+			productReference = F3F9A2A722CC4F28002870CC /* LuckyEggTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F3F9A2B122CC4F28002870CC /* LuckyEggUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3F9A2C122CC4F28002870CC /* Build configuration list for PBXNativeTarget "LuckyEggUITests" */;
+			buildPhases = (
+				F3F9A2AE22CC4F28002870CC /* Sources */,
+				F3F9A2AF22CC4F28002870CC /* Frameworks */,
+				F3F9A2B022CC4F28002870CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3F9A2B422CC4F28002870CC /* PBXTargetDependency */,
+			);
+			name = LuckyEggUITests;
+			productName = LuckyEggUITests;
+			productReference = F3F9A2B222CC4F28002870CC /* LuckyEggUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3F9A28722CC4F26002870CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = lishuang;
+				TargetAttributes = {
+					F3F9A28E22CC4F26002870CC = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					F3F9A2A622CC4F28002870CC = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F3F9A28E22CC4F26002870CC;
+					};
+					F3F9A2B122CC4F28002870CC = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F3F9A28E22CC4F26002870CC;
+					};
+				};
+			};
+			buildConfigurationList = F3F9A28A22CC4F26002870CC /* Build configuration list for PBXProject "LuckyEgg" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F3F9A28622CC4F26002870CC;
+			productRefGroup = F3F9A29022CC4F26002870CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3F9A28E22CC4F26002870CC /* LuckyEgg */,
+				F3F9A2A622CC4F28002870CC /* LuckyEggTests */,
+				F3F9A2B122CC4F28002870CC /* LuckyEggUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3F9A28D22CC4F26002870CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3F9A29F22CC4F28002870CC /* LaunchScreen.storyboard in Resources */,
+				F3F9A29C22CC4F28002870CC /* Assets.xcassets in Resources */,
+				F3F9A29A22CC4F26002870CC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3F9A2A522CC4F28002870CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3F9A2B022CC4F28002870CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3F9A28B22CC4F26002870CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3F9A29722CC4F26002870CC /* ViewController.m in Sources */,
+				F3F9A2A222CC4F28002870CC /* main.m in Sources */,
+				F3F9A29422CC4F26002870CC /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3F9A2A322CC4F28002870CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3F9A2AC22CC4F28002870CC /* LuckyEggTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3F9A2AE22CC4F28002870CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3F9A2B722CC4F28002870CC /* LuckyEggUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F3F9A2A922CC4F28002870CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3F9A28E22CC4F26002870CC /* LuckyEgg */;
+			targetProxy = F3F9A2A822CC4F28002870CC /* PBXContainerItemProxy */;
+		};
+		F3F9A2B422CC4F28002870CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3F9A28E22CC4F26002870CC /* LuckyEgg */;
+			targetProxy = F3F9A2B322CC4F28002870CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F3F9A29822CC4F26002870CC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3F9A29922CC4F26002870CC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F3F9A29D22CC4F28002870CC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3F9A29E22CC4F28002870CC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F3F9A2B922CC4F28002870CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F3F9A2BA22CC4F28002870CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3F9A2BC22CC4F28002870CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LuckyEgg/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Egg.LS.LuckyEgg;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F3F9A2BD22CC4F28002870CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LuckyEgg/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Egg.LS.LuckyEgg;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F3F9A2BF22CC4F28002870CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LuckyEggTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Egg.LS.LuckyEggTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LuckyEgg.app/LuckyEgg";
+			};
+			name = Debug;
+		};
+		F3F9A2C022CC4F28002870CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LuckyEggTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Egg.LS.LuckyEggTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LuckyEgg.app/LuckyEgg";
+			};
+			name = Release;
+		};
+		F3F9A2C222CC4F28002870CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LuckyEggUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Egg.LS.LuckyEggUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LuckyEgg;
+			};
+			name = Debug;
+		};
+		F3F9A2C322CC4F28002870CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LuckyEggUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Egg.LS.LuckyEggUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LuckyEgg;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3F9A28A22CC4F26002870CC /* Build configuration list for PBXProject "LuckyEgg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3F9A2B922CC4F28002870CC /* Debug */,
+				F3F9A2BA22CC4F28002870CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3F9A2BB22CC4F28002870CC /* Build configuration list for PBXNativeTarget "LuckyEgg" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3F9A2BC22CC4F28002870CC /* Debug */,
+				F3F9A2BD22CC4F28002870CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3F9A2BE22CC4F28002870CC /* Build configuration list for PBXNativeTarget "LuckyEggTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3F9A2BF22CC4F28002870CC /* Debug */,
+				F3F9A2C022CC4F28002870CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3F9A2C122CC4F28002870CC /* Build configuration list for PBXNativeTarget "LuckyEggUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3F9A2C222CC4F28002870CC /* Debug */,
+				F3F9A2C322CC4F28002870CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F3F9A28722CC4F26002870CC /* Project object */;
+}
