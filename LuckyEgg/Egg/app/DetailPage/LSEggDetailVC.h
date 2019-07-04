@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LSEggDetailVC : UIViewController
 
+- (void)loadData:(id)data;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0A1693326CD2814E80148B77 /* libPods-LuckyEgg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B80CE95A2CA7DA3A9E75FDCB /* libPods-LuckyEgg.a */; };
+		F30698D122CCB11E00432E9A /* LSEggDetailVM.m in Sources */ = {isa = PBXBuildFile; fileRef = F30698D022CCB11E00432E9A /* LSEggDetailVM.m */; };
 		F3F9A29C22CC4F28002870CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3F9A29B22CC4F28002870CC /* Assets.xcassets */; };
 		F3F9A29F22CC4F28002870CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3F9A29D22CC4F28002870CC /* LaunchScreen.storyboard */; };
 		F3F9A2A222CC4F28002870CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F9A2A122CC4F28002870CC /* main.m */; };
@@ -17,18 +18,16 @@
 		F3F9A2E722CC4F52002870CC /* LSEggContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F9A2CB22CC4F52002870CC /* LSEggContainerView.m */; };
 		F3F9A2E822CC4F52002870CC /* LSEggDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F9A2CE22CC4F52002870CC /* LSEggDetailVC.m */; };
 		F3F9A2E922CC4F52002870CC /* LSEggNavigationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F9A2D222CC4F52002870CC /* LSEggNavigationManager.m */; };
-		F3F9A2EA22CC4F52002870CC /* LSWeaterNavigationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F9A2D322CC4F52002870CC /* LSWeaterNavigationVC.m */; };
+		F3F9A2EA22CC4F52002870CC /* LSEggNavigationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F9A2D322CC4F52002870CC /* LSEggNavigationVC.m */; };
 		F3F9A2EB22CC4F52002870CC /* LSEggSearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F9A2D522CC4F52002870CC /* LSEggSearchVC.m */; };
 		F3F9A2EC22CC4F52002870CC /* LSUIkit.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F9A2D922CC4F52002870CC /* LSUIkit.m */; };
 		F3F9A2ED22CC4F52002870CC /* LSEggSettingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F9A2DB22CC4F52002870CC /* LSEggSettingVC.m */; };
-		F3F9A2EE22CC4F52002870CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3F9A2DD22CC4F52002870CC /* Assets.xcassets */; };
-		F3F9A2EF22CC4F52002870CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3F9A2DE22CC4F52002870CC /* LaunchScreen.storyboard */; };
-		F3F9A2F022CC4F52002870CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F9A2E022CC4F52002870CC /* main.m */; };
 		F3F9A2F122CC4F52002870CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F9A2E122CC4F52002870CC /* AppDelegate.m */; };
 		F3F9A2F222CC4F52002870CC /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F3F9A2E222CC4F52002870CC /* 2.jpg */; };
-		F3F9A2F322CC4F52002870CC /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3F9A2E322CC4F52002870CC /* Info.plist */; };
 		F3F9A2F422CC4F52002870CC /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F3F9A2E422CC4F52002870CC /* 1.jpg */; };
 		F3F9A2F522CC4F52002870CC /* 0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F3F9A2E522CC4F52002870CC /* 0.jpg */; };
+		F3F9A2FA22CC53B1002870CC /* LSEggDetailNavView.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F9A2F922CC53B1002870CC /* LSEggDetailNavView.m */; };
+		F3F9A2FD22CC7DD9002870CC /* LSEggDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F9A2FC22CC7DD9002870CC /* LSEggDetailCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +50,8 @@
 /* Begin PBXFileReference section */
 		A360CC8C2AE68C505446E921 /* Pods-LuckyEgg.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuckyEgg.debug.xcconfig"; path = "Target Support Files/Pods-LuckyEgg/Pods-LuckyEgg.debug.xcconfig"; sourceTree = "<group>"; };
 		B80CE95A2CA7DA3A9E75FDCB /* libPods-LuckyEgg.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LuckyEgg.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F30698CF22CCB11E00432E9A /* LSEggDetailVM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSEggDetailVM.h; sourceTree = "<group>"; };
+		F30698D022CCB11E00432E9A /* LSEggDetailVM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSEggDetailVM.m; sourceTree = "<group>"; };
 		F3F9A28F22CC4F26002870CC /* LuckyEgg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuckyEgg.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F9A29B22CC4F28002870CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3F9A29E22CC4F28002870CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -67,26 +68,26 @@
 		F3F9A2C922CC4F52002870CC /* LSEggDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSEggDetailVC.h; sourceTree = "<group>"; };
 		F3F9A2CB22CC4F52002870CC /* LSEggContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSEggContainerView.m; sourceTree = "<group>"; };
 		F3F9A2CC22CC4F52002870CC /* LSEggContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSEggContainerView.h; sourceTree = "<group>"; };
-		F3F9A2CD22CC4F52002870CC /* LSWeaterHomePageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSWeaterHomePageVC.h; sourceTree = "<group>"; };
+		F3F9A2CD22CC4F52002870CC /* LSEggHomePageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSEggHomePageVC.h; sourceTree = "<group>"; };
 		F3F9A2CE22CC4F52002870CC /* LSEggDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSEggDetailVC.m; sourceTree = "<group>"; };
 		F3F9A2D022CC4F52002870CC /* LSEggNavigationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSEggNavigationManager.h; sourceTree = "<group>"; };
-		F3F9A2D122CC4F52002870CC /* LSWeaterNavigationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSWeaterNavigationVC.h; sourceTree = "<group>"; };
+		F3F9A2D122CC4F52002870CC /* LSEggNavigationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSEggNavigationVC.h; sourceTree = "<group>"; };
 		F3F9A2D222CC4F52002870CC /* LSEggNavigationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSEggNavigationManager.m; sourceTree = "<group>"; };
-		F3F9A2D322CC4F52002870CC /* LSWeaterNavigationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSWeaterNavigationVC.m; sourceTree = "<group>"; };
+		F3F9A2D322CC4F52002870CC /* LSEggNavigationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSEggNavigationVC.m; sourceTree = "<group>"; };
 		F3F9A2D522CC4F52002870CC /* LSEggSearchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSEggSearchVC.m; sourceTree = "<group>"; };
 		F3F9A2D622CC4F52002870CC /* LSEggSearchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSEggSearchVC.h; sourceTree = "<group>"; };
 		F3F9A2D822CC4F52002870CC /* LSUIkit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSUIkit.h; sourceTree = "<group>"; };
 		F3F9A2D922CC4F52002870CC /* LSUIkit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSUIkit.m; sourceTree = "<group>"; };
 		F3F9A2DB22CC4F52002870CC /* LSEggSettingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSEggSettingVC.m; sourceTree = "<group>"; };
 		F3F9A2DC22CC4F52002870CC /* LSEggSettingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSEggSettingVC.h; sourceTree = "<group>"; };
-		F3F9A2DD22CC4F52002870CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F3F9A2DF22CC4F52002870CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F3F9A2E022CC4F52002870CC /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F3F9A2E122CC4F52002870CC /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F3F9A2E222CC4F52002870CC /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
-		F3F9A2E322CC4F52002870CC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3F9A2E422CC4F52002870CC /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
 		F3F9A2E522CC4F52002870CC /* 0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0.jpg; sourceTree = "<group>"; };
+		F3F9A2F822CC53B1002870CC /* LSEggDetailNavView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSEggDetailNavView.h; sourceTree = "<group>"; };
+		F3F9A2F922CC53B1002870CC /* LSEggDetailNavView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSEggDetailNavView.m; sourceTree = "<group>"; };
+		F3F9A2FB22CC7DD9002870CC /* LSEggDetailCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSEggDetailCell.h; sourceTree = "<group>"; };
+		F3F9A2FC22CC7DD9002870CC /* LSEggDetailCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSEggDetailCell.m; sourceTree = "<group>"; };
 		FF20D5D819F1A1348A2417D8 /* Pods-LuckyEgg.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuckyEgg.release.xcconfig"; path = "Target Support Files/Pods-LuckyEgg/Pods-LuckyEgg.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,7 +123,6 @@
 				A360CC8C2AE68C505446E921 /* Pods-LuckyEgg.debug.xcconfig */,
 				FF20D5D819F1A1348A2417D8 /* Pods-LuckyEgg.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -192,10 +192,6 @@
 				F3F9A2C522CC4F52002870CC /* AppDelegate.h */,
 				F3F9A2E122CC4F52002870CC /* AppDelegate.m */,
 				F3F9A2C622CC4F52002870CC /* app */,
-				F3F9A2DD22CC4F52002870CC /* Assets.xcassets */,
-				F3F9A2DE22CC4F52002870CC /* LaunchScreen.storyboard */,
-				F3F9A2E022CC4F52002870CC /* main.m */,
-				F3F9A2E322CC4F52002870CC /* Info.plist */,
 				F3F9A2E222CC4F52002870CC /* 2.jpg */,
 				F3F9A2E422CC4F52002870CC /* 1.jpg */,
 				F3F9A2E522CC4F52002870CC /* 0.jpg */,
@@ -206,6 +202,7 @@
 		F3F9A2C622CC4F52002870CC /* app */ = {
 			isa = PBXGroup;
 			children = (
+				F3F9A2F622CC533C002870CC /* DetailPage */,
 				F3F9A2C722CC4F52002870CC /* HomePage */,
 				F3F9A2CF22CC4F52002870CC /* Navigation */,
 				F3F9A2D422CC4F52002870CC /* Search */,
@@ -218,11 +215,9 @@
 		F3F9A2C722CC4F52002870CC /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
+				F3F9A2CD22CC4F52002870CC /* LSEggHomePageVC.h */,
 				F3F9A2C822CC4F52002870CC /* LSEggHomePageVC.m */,
-				F3F9A2C922CC4F52002870CC /* LSEggDetailVC.h */,
 				F3F9A2CA22CC4F52002870CC /* View */,
-				F3F9A2CD22CC4F52002870CC /* LSWeaterHomePageVC.h */,
-				F3F9A2CE22CC4F52002870CC /* LSEggDetailVC.m */,
 			);
 			path = HomePage;
 			sourceTree = "<group>";
@@ -230,8 +225,8 @@
 		F3F9A2CA22CC4F52002870CC /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F3F9A2CB22CC4F52002870CC /* LSEggContainerView.m */,
 				F3F9A2CC22CC4F52002870CC /* LSEggContainerView.h */,
+				F3F9A2CB22CC4F52002870CC /* LSEggContainerView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -240,9 +235,9 @@
 			isa = PBXGroup;
 			children = (
 				F3F9A2D022CC4F52002870CC /* LSEggNavigationManager.h */,
-				F3F9A2D122CC4F52002870CC /* LSWeaterNavigationVC.h */,
 				F3F9A2D222CC4F52002870CC /* LSEggNavigationManager.m */,
-				F3F9A2D322CC4F52002870CC /* LSWeaterNavigationVC.m */,
+				F3F9A2D122CC4F52002870CC /* LSEggNavigationVC.h */,
+				F3F9A2D322CC4F52002870CC /* LSEggNavigationVC.m */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -250,8 +245,8 @@
 		F3F9A2D422CC4F52002870CC /* Search */ = {
 			isa = PBXGroup;
 			children = (
-				F3F9A2D522CC4F52002870CC /* LSEggSearchVC.m */,
 				F3F9A2D622CC4F52002870CC /* LSEggSearchVC.h */,
+				F3F9A2D522CC4F52002870CC /* LSEggSearchVC.m */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -272,6 +267,29 @@
 				F3F9A2DC22CC4F52002870CC /* LSEggSettingVC.h */,
 			);
 			path = Setting;
+			sourceTree = "<group>";
+		};
+		F3F9A2F622CC533C002870CC /* DetailPage */ = {
+			isa = PBXGroup;
+			children = (
+				F3F9A2F722CC5349002870CC /* View */,
+				F3F9A2C922CC4F52002870CC /* LSEggDetailVC.h */,
+				F3F9A2CE22CC4F52002870CC /* LSEggDetailVC.m */,
+				F30698CF22CCB11E00432E9A /* LSEggDetailVM.h */,
+				F30698D022CCB11E00432E9A /* LSEggDetailVM.m */,
+			);
+			path = DetailPage;
+			sourceTree = "<group>";
+		};
+		F3F9A2F722CC5349002870CC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F3F9A2F822CC53B1002870CC /* LSEggDetailNavView.h */,
+				F3F9A2F922CC53B1002870CC /* LSEggDetailNavView.m */,
+				F3F9A2FB22CC7DD9002870CC /* LSEggDetailCell.h */,
+				F3F9A2FC22CC7DD9002870CC /* LSEggDetailCell.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -380,11 +398,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F3F9A29F22CC4F28002870CC /* LaunchScreen.storyboard in Resources */,
-				F3F9A2EF22CC4F52002870CC /* LaunchScreen.storyboard in Resources */,
-				F3F9A2F322CC4F52002870CC /* Info.plist in Resources */,
 				F3F9A2F222CC4F52002870CC /* 2.jpg in Resources */,
 				F3F9A2F522CC4F52002870CC /* 0.jpg in Resources */,
-				F3F9A2EE22CC4F52002870CC /* Assets.xcassets in Resources */,
 				F3F9A29C22CC4F28002870CC /* Assets.xcassets in Resources */,
 				F3F9A2F422CC4F52002870CC /* 1.jpg in Resources */,
 			);
@@ -453,8 +468,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F30698D122CCB11E00432E9A /* LSEggDetailVM.m in Sources */,
 				F3F9A2F122CC4F52002870CC /* AppDelegate.m in Sources */,
-				F3F9A2F022CC4F52002870CC /* main.m in Sources */,
 				F3F9A2EB22CC4F52002870CC /* LSEggSearchVC.m in Sources */,
 				F3F9A2EC22CC4F52002870CC /* LSUIkit.m in Sources */,
 				F3F9A2E822CC4F52002870CC /* LSEggDetailVC.m in Sources */,
@@ -463,7 +478,9 @@
 				F3F9A2A222CC4F28002870CC /* main.m in Sources */,
 				F3F9A2E622CC4F52002870CC /* LSEggHomePageVC.m in Sources */,
 				F3F9A2E922CC4F52002870CC /* LSEggNavigationManager.m in Sources */,
-				F3F9A2EA22CC4F52002870CC /* LSWeaterNavigationVC.m in Sources */,
+				F3F9A2FD22CC7DD9002870CC /* LSEggDetailCell.m in Sources */,
+				F3F9A2EA22CC4F52002870CC /* LSEggNavigationVC.m in Sources */,
+				F3F9A2FA22CC53B1002870CC /* LSEggDetailNavView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,14 +520,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				F3F9A29E22CC4F28002870CC /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		F3F9A2DE22CC4F52002870CC /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F3F9A2DF22CC4F52002870CC /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -636,15 +645,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 543VB5828Q;
+				DEVELOPMENT_TEAM = 58LH6S5N3F;
 				INFOPLIST_FILE = LuckyEgg/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Egg.LS.LuckyEgg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 			};
 			name = Debug;
 		};
@@ -654,15 +665,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 543VB5828Q;
+				DEVELOPMENT_TEAM = 58LH6S5N3F;
 				INFOPLIST_FILE = LuckyEgg/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Egg.LS.LuckyEgg;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 			};
 			name = Release;
 		};

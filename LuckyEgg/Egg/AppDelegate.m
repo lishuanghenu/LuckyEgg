@@ -26,6 +26,8 @@
     
     [LSEggNavigationManager sharedNavigator].navigationController = self.navigationController;
     
+    [LSEggNavigationManager sharedNavigator].homeViewController = homeVC;
+    
     self.window.rootViewController = homeVC;
     [self.window makeKeyAndVisible];
     return YES;

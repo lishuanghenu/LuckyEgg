@@ -9,6 +9,7 @@
 #import "LSEggHomePageVC.h"
 #import "LSEggDetailVC.h"
 #import "LSEggContainerView.h"
+#import "LSEggSettingVC.h"
 
 @interface LSEggHomePageVC () <LSEggContainerViewProtocol>
 {
@@ -35,6 +36,7 @@
     [self reloadData];
 }
 
+
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
@@ -58,7 +60,7 @@
     for (int i = 0 ; i < self.dataArray.count; i++) {
         LSEggDetailVC *detail = [LSEggDetailVC new];
         detail.view.frame = _screenBounds;
-        detail.view.backgroundColor = [UIColor clearColor];
+        detail.view.backgroundColor = [UIColor colorWithWhite:1 alpha:0.0];
         [tempVCArray addObject:detail];
         [self addChildViewController:detail];
         [tempViewArray addObject:detail.view];

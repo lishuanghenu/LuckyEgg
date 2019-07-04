@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface LSEggNavigationManager : NSObject
 
 @property (nonatomic, strong) UINavigationController *navigationController;
+@property (nonatomic, strong) UIViewController *homeViewController;
 
 + (LSEggNavigationManager *)sharedNavigator;
 

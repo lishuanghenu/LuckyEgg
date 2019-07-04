@@ -40,9 +40,12 @@
 - (void)showSettingVC
 {
     LSEggSettingVC *settingVC = [LSEggSettingVC new];
-    [self.navigationController presentViewController:settingVC animated:YES completion:^{
-        
-    }];
+    dispatch_async(dispatch_get_main_queue(), ^ {
+        [self.homeViewController presentViewController:settingVC animated:YES completion:^{
+            
+        }];
+    });
+    
 }
 
 #pragma mark
