@@ -9,10 +9,10 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
-
+@class LSEggUserLoacltionModel;
 @interface LSEggDetailVC : UIViewController
 
-- (void)loadData:(id)data;
+- (void)loadLocationModel:(LSEggUserLoacltionModel *)localtionModel;
 
 @end
 

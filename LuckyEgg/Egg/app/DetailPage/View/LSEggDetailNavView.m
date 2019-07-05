@@ -10,6 +10,7 @@
 #import "Masonry.h"
 #import <ReactiveObjC.h>
 #import "LSEggNavigationManager.h"
+#import "LSEggLocationManager.h"
 
 @interface LSEggDetailNavView ()
 @property (nonatomic, strong) UILabel *titleLabel;
@@ -53,7 +54,7 @@
     [self.settingImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(self);
         make.right.equalTo(self).offset(-10);
-        make.width.and.height.equalTo(@22);
+        make.width.and.height.equalTo(@44);
     }];
     
 }
@@ -62,14 +63,21 @@
 
 - (void)loadData:(id)data
 {
-    self.titleLabel.text = @"上海";
+    self.titleLabel.text = (id)data;
 }
 
 #pragma mark
 
 - (void)touchSetting
 {
-    [[LSEggNavigationManager sharedNavigator] showSettingVC];
+//    [[LSEggNavigationManager sharedNavigator] showSettingVC];
+    @weakify(self);
+    [[LSEggLocationManager sharedLocationManager] locationStringWithBlock:^(NSString * _Nullable localtionString) {
+        @strongify(self);
+        if (localtionString.length) {
+            self.titleLabel.text = localtionString;
+        }
+    }];
 }
 
 

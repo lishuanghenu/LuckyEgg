@@ -10,17 +10,19 @@
 #import "LSEggDetailVC.h"
 #import "LSEggContainerView.h"
 #import "LSEggSettingVC.h"
+#import "LSEggHomeVCVM.h"
+#import "LSEggUserLoacltionModel.h"
+#import <ReactiveObjC.h>
 
 @interface LSEggHomePageVC () <LSEggContainerViewProtocol>
-{
-    CGRect _screenBounds;
-}
+
+@property (nonatomic, assign) CGRect screenBounds;
 @property (nonatomic, strong) LSEggContainerView *containerView;
 @property (nonatomic, strong) NSArray *contentViewControllers;
 
-@property (nonatomic, strong) NSArray * dataArray;
-
 @property (nonatomic, strong) UIImageView *homeBgImageView;
+
+@property (nonatomic, strong) LSEggHomeVCVM *viewModel;
 
 @end
 
@@ -29,11 +31,32 @@
 #pragma mark  ----- Life Cycle -----
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.viewModel = [LSEggHomeVCVM new];
+    
     _screenBounds = [UIScreen mainScreen].bounds;
     [self.view addSubview:self.homeBgImageView];
     self.homeBgImageView.frame = _screenBounds;
     [self.view addSubview:self.containerView];
-    [self reloadData];
+    [self.viewModel loadData];
+    
+    @weakify(self);
+    [RACObserve(self.viewModel, userLocaltionArray) subscribeNext:^(id  _Nullable x) {
+        @strongify(self);
+        NSMutableArray *tempVCArray = [NSMutableArray new];
+        NSMutableArray *tempViewArray = [NSMutableArray new];
+        for (int i = 0 ; i < self.viewModel.userLocaltionArray.count;i++) {
+            LSEggDetailVC *detail = [LSEggDetailVC new];
+            [detail loadLocationModel:self.viewModel.userLocaltionArray[i]];
+            detail.view.frame = self.screenBounds;
+            detail.view.backgroundColor = [UIColor colorWithWhite:1 alpha:0.0];
+            [tempVCArray addObject:detail];
+            [self addChildViewController:detail];
+            [tempViewArray addObject:detail.view];
+        }
+        self.contentViewControllers = [tempVCArray copy];
+        [self.containerView setContentViews:[tempViewArray copy]];
+        [self.containerView setNeedsLayout];
+    }];
 }
 
 
@@ -54,20 +77,7 @@
 
 - (void)reloadData
 {
-    self.dataArray = @[@"上海",@"武汉",@"信阳"];
-    NSMutableArray *tempVCArray = [NSMutableArray new];
-    NSMutableArray *tempViewArray = [NSMutableArray new];
-    for (int i = 0 ; i < self.dataArray.count; i++) {
-        LSEggDetailVC *detail = [LSEggDetailVC new];
-        detail.view.frame = _screenBounds;
-        detail.view.backgroundColor = [UIColor colorWithWhite:1 alpha:0.0];
-        [tempVCArray addObject:detail];
-        [self addChildViewController:detail];
-        [tempViewArray addObject:detail.view];
-    }
-    self.contentViewControllers = [tempVCArray copy];
-    [self.containerView setContentViews:[tempViewArray copy]];
-    [self.containerView setNeedsLayout];
+    [self.viewModel loadData];
 }
 #pragma mark
 
@@ -113,7 +123,7 @@
 {
     if (!_homeBgImageView) {
         _homeBgImageView = [UIImageView new];
-        _homeBgImageView.image = [UIImage imageNamed:@"1.jpg"];
+        _homeBgImageView.image = [UIImage imageNamed:@"2.jpg"];
     }
     return _homeBgImageView;
 }

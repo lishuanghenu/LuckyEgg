@@ -11,13 +11,26 @@
 #import "LSEggHomePageVC.h"
 #import "LSEggNavigationManager.h"
 
+// TEST
+#import "LSEggFMDBManager.h"
+
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
 
+static  NSString * isFirstOpen = @"isFirstOpen";
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    NSString * appIsFirstOpen = [[NSUserDefaults standardUserDefaults] stringForKey:isFirstOpen];
+    if (!appIsFirstOpen.length) {
+        // 加载地址数据库
+        [[LSEggFMDBManager sharedFMDBManager] localtionTableInit];
+        [[NSUserDefaults standardUserDefaults] setValue:isFirstOpen forKey:isFirstOpen];
+    }
+   
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     LSEggHomePageVC * homeVC = [[LSEggHomePageVC alloc] init];

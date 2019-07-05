@@ -7,5 +7,6 @@ pod 'ReactiveObjC', '~> 3.1.0'
 pod 'MJRefresh'
 pod 'FMDB'
 pod 'Masonry'
+pod 'YYModel'
 
 end

@@ -9,6 +9,16 @@
 /* Begin PBXBuildFile section */
 		0A1693326CD2814E80148B77 /* libPods-LuckyEgg.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B80CE95A2CA7DA3A9E75FDCB /* libPods-LuckyEgg.a */; };
 		F30698D122CCB11E00432E9A /* LSEggDetailVM.m in Sources */ = {isa = PBXBuildFile; fileRef = F30698D022CCB11E00432E9A /* LSEggDetailVM.m */; };
+		F30698DD22CDA0B200432E9A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F30698DC22CDA0B200432E9A /* CoreLocation.framework */; };
+		F30698E122CDA15800432E9A /* LSEggLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F30698E022CDA15800432E9A /* LSEggLocationManager.m */; };
+		F334071822CDD56700E0D6E7 /* LSEggFMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F334071722CDD56700E0D6E7 /* LSEggFMDBManager.m */; };
+		F334072022CDE74F00E0D6E7 /* LSEggLocationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F334071F22CDE74F00E0D6E7 /* LSEggLocationModel.m */; };
+		F334072422CDEB0A00E0D6E7 /* LSEggBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F334072322CDEB0A00E0D6E7 /* LSEggBaseModel.m */; };
+		F334072622CDEDE100E0D6E7 /* city.json in Resources */ = {isa = PBXBuildFile; fileRef = F334072522CDEDE100E0D6E7 /* city.json */; };
+		F334073F22CF2B8100E0D6E7 /* LSEggDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F334073B22CF2B8100E0D6E7 /* LSEggDetailModel.m */; };
+		F334074022CF2B8100E0D6E7 /* LSEggDayWeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F334073C22CF2B8100E0D6E7 /* LSEggDayWeatherModel.m */; };
+		F334074522CF2BD300E0D6E7 /* LSEggUserLoacltionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F334074322CF2BD300E0D6E7 /* LSEggUserLoacltionModel.m */; };
+		F334074822CF2BF700E0D6E7 /* LSEggHomeVCVM.m in Sources */ = {isa = PBXBuildFile; fileRef = F334074722CF2BF700E0D6E7 /* LSEggHomeVCVM.m */; };
 		F3F9A29C22CC4F28002870CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3F9A29B22CC4F28002870CC /* Assets.xcassets */; };
 		F3F9A29F22CC4F28002870CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3F9A29D22CC4F28002870CC /* LaunchScreen.storyboard */; };
 		F3F9A2A222CC4F28002870CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F9A2A122CC4F28002870CC /* main.m */; };
@@ -52,6 +62,24 @@
 		B80CE95A2CA7DA3A9E75FDCB /* libPods-LuckyEgg.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-LuckyEgg.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F30698CF22CCB11E00432E9A /* LSEggDetailVM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSEggDetailVM.h; sourceTree = "<group>"; };
 		F30698D022CCB11E00432E9A /* LSEggDetailVM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSEggDetailVM.m; sourceTree = "<group>"; };
+		F30698DC22CDA0B200432E9A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F30698DF22CDA15800432E9A /* LSEggLocationManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSEggLocationManager.h; sourceTree = "<group>"; };
+		F30698E022CDA15800432E9A /* LSEggLocationManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSEggLocationManager.m; sourceTree = "<group>"; };
+		F334071622CDD56700E0D6E7 /* LSEggFMDBManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSEggFMDBManager.h; sourceTree = "<group>"; };
+		F334071722CDD56700E0D6E7 /* LSEggFMDBManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSEggFMDBManager.m; sourceTree = "<group>"; };
+		F334071E22CDE74F00E0D6E7 /* LSEggLocationModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSEggLocationModel.h; sourceTree = "<group>"; };
+		F334071F22CDE74F00E0D6E7 /* LSEggLocationModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSEggLocationModel.m; sourceTree = "<group>"; };
+		F334072222CDEB0A00E0D6E7 /* LSEggBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSEggBaseModel.h; sourceTree = "<group>"; };
+		F334072322CDEB0A00E0D6E7 /* LSEggBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSEggBaseModel.m; sourceTree = "<group>"; };
+		F334072522CDEDE100E0D6E7 /* city.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = city.json; sourceTree = "<group>"; };
+		F334073B22CF2B8100E0D6E7 /* LSEggDetailModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSEggDetailModel.m; sourceTree = "<group>"; };
+		F334073C22CF2B8100E0D6E7 /* LSEggDayWeatherModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSEggDayWeatherModel.m; sourceTree = "<group>"; };
+		F334073D22CF2B8100E0D6E7 /* LSEggDetailModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSEggDetailModel.h; sourceTree = "<group>"; };
+		F334073E22CF2B8100E0D6E7 /* LSEggDayWeatherModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSEggDayWeatherModel.h; sourceTree = "<group>"; };
+		F334074322CF2BD300E0D6E7 /* LSEggUserLoacltionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSEggUserLoacltionModel.m; sourceTree = "<group>"; };
+		F334074422CF2BD300E0D6E7 /* LSEggUserLoacltionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSEggUserLoacltionModel.h; sourceTree = "<group>"; };
+		F334074622CF2BF700E0D6E7 /* LSEggHomeVCVM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LSEggHomeVCVM.h; sourceTree = "<group>"; };
+		F334074722CF2BF700E0D6E7 /* LSEggHomeVCVM.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LSEggHomeVCVM.m; sourceTree = "<group>"; };
 		F3F9A28F22CC4F26002870CC /* LuckyEgg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuckyEgg.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3F9A29B22CC4F28002870CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3F9A29E22CC4F28002870CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -96,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F30698DD22CDA0B200432E9A /* CoreLocation.framework in Frameworks */,
 				0A1693326CD2814E80148B77 /* libPods-LuckyEgg.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -129,9 +158,75 @@
 		8F07698491BA3489D7FFD85B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F30698DC22CDA0B200432E9A /* CoreLocation.framework */,
 				B80CE95A2CA7DA3A9E75FDCB /* libPods-LuckyEgg.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F30698DE22CDA13800432E9A /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				F334071A22CDE18200E0D6E7 /* manager */,
+				F334071922CDE17A00E0D6E7 /* model */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		F334071522CDD55300E0D6E7 /* SQL */ = {
+			isa = PBXGroup;
+			children = (
+				F334071622CDD56700E0D6E7 /* LSEggFMDBManager.h */,
+				F334071722CDD56700E0D6E7 /* LSEggFMDBManager.m */,
+			);
+			path = SQL;
+			sourceTree = "<group>";
+		};
+		F334071922CDE17A00E0D6E7 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				F334071E22CDE74F00E0D6E7 /* LSEggLocationModel.h */,
+				F334071F22CDE74F00E0D6E7 /* LSEggLocationModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		F334071A22CDE18200E0D6E7 /* manager */ = {
+			isa = PBXGroup;
+			children = (
+				F30698DF22CDA15800432E9A /* LSEggLocationManager.h */,
+				F30698E022CDA15800432E9A /* LSEggLocationManager.m */,
+			);
+			path = manager;
+			sourceTree = "<group>";
+		};
+		F334072122CDEAF200E0D6E7 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				F334072222CDEB0A00E0D6E7 /* LSEggBaseModel.h */,
+				F334072322CDEB0A00E0D6E7 /* LSEggBaseModel.m */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		F334073A22CF2B6100E0D6E7 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				F334073E22CF2B8100E0D6E7 /* LSEggDayWeatherModel.h */,
+				F334073C22CF2B8100E0D6E7 /* LSEggDayWeatherModel.m */,
+				F334073D22CF2B8100E0D6E7 /* LSEggDetailModel.h */,
+				F334073B22CF2B8100E0D6E7 /* LSEggDetailModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		F334074222CF2BAC00E0D6E7 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				F334074422CF2BD300E0D6E7 /* LSEggUserLoacltionModel.h */,
+				F334074322CF2BD300E0D6E7 /* LSEggUserLoacltionModel.m */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 		F3F9A28622CC4F26002870CC = {
@@ -195,6 +290,7 @@
 				F3F9A2E222CC4F52002870CC /* 2.jpg */,
 				F3F9A2E422CC4F52002870CC /* 1.jpg */,
 				F3F9A2E522CC4F52002870CC /* 0.jpg */,
+				F334072522CDEDE100E0D6E7 /* city.json */,
 			);
 			path = Egg;
 			sourceTree = "<group>";
@@ -202,6 +298,9 @@
 		F3F9A2C622CC4F52002870CC /* app */ = {
 			isa = PBXGroup;
 			children = (
+				F334072122CDEAF200E0D6E7 /* common */,
+				F334071522CDD55300E0D6E7 /* SQL */,
+				F30698DE22CDA13800432E9A /* Location */,
 				F3F9A2F622CC533C002870CC /* DetailPage */,
 				F3F9A2C722CC4F52002870CC /* HomePage */,
 				F3F9A2CF22CC4F52002870CC /* Navigation */,
@@ -215,9 +314,12 @@
 		F3F9A2C722CC4F52002870CC /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
+				F334074222CF2BAC00E0D6E7 /* model */,
 				F3F9A2CD22CC4F52002870CC /* LSEggHomePageVC.h */,
 				F3F9A2C822CC4F52002870CC /* LSEggHomePageVC.m */,
 				F3F9A2CA22CC4F52002870CC /* View */,
+				F334074622CF2BF700E0D6E7 /* LSEggHomeVCVM.h */,
+				F334074722CF2BF700E0D6E7 /* LSEggHomeVCVM.m */,
 			);
 			path = HomePage;
 			sourceTree = "<group>";
@@ -272,6 +374,7 @@
 		F3F9A2F622CC533C002870CC /* DetailPage */ = {
 			isa = PBXGroup;
 			children = (
+				F334073A22CF2B6100E0D6E7 /* model */,
 				F3F9A2F722CC5349002870CC /* View */,
 				F3F9A2C922CC4F52002870CC /* LSEggDetailVC.h */,
 				F3F9A2CE22CC4F52002870CC /* LSEggDetailVC.m */,
@@ -361,6 +464,11 @@
 				TargetAttributes = {
 					F3F9A28E22CC4F26002870CC = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					F3F9A2A622CC4F28002870CC = {
 						CreatedOnToolsVersion = 10.1;
@@ -397,6 +505,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F334072622CDEDE100E0D6E7 /* city.json in Resources */,
 				F3F9A29F22CC4F28002870CC /* LaunchScreen.storyboard in Resources */,
 				F3F9A2F222CC4F52002870CC /* 2.jpg in Resources */,
 				F3F9A2F522CC4F52002870CC /* 0.jpg in Resources */,
@@ -468,19 +577,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F334074822CF2BF700E0D6E7 /* LSEggHomeVCVM.m in Sources */,
 				F30698D122CCB11E00432E9A /* LSEggDetailVM.m in Sources */,
 				F3F9A2F122CC4F52002870CC /* AppDelegate.m in Sources */,
 				F3F9A2EB22CC4F52002870CC /* LSEggSearchVC.m in Sources */,
+				F334074522CF2BD300E0D6E7 /* LSEggUserLoacltionModel.m in Sources */,
 				F3F9A2EC22CC4F52002870CC /* LSUIkit.m in Sources */,
+				F334072422CDEB0A00E0D6E7 /* LSEggBaseModel.m in Sources */,
 				F3F9A2E822CC4F52002870CC /* LSEggDetailVC.m in Sources */,
 				F3F9A2ED22CC4F52002870CC /* LSEggSettingVC.m in Sources */,
 				F3F9A2E722CC4F52002870CC /* LSEggContainerView.m in Sources */,
 				F3F9A2A222CC4F28002870CC /* main.m in Sources */,
 				F3F9A2E622CC4F52002870CC /* LSEggHomePageVC.m in Sources */,
+				F334074022CF2B8100E0D6E7 /* LSEggDayWeatherModel.m in Sources */,
+				F334073F22CF2B8100E0D6E7 /* LSEggDetailModel.m in Sources */,
 				F3F9A2E922CC4F52002870CC /* LSEggNavigationManager.m in Sources */,
 				F3F9A2FD22CC7DD9002870CC /* LSEggDetailCell.m in Sources */,
+				F334072022CDE74F00E0D6E7 /* LSEggLocationModel.m in Sources */,
 				F3F9A2EA22CC4F52002870CC /* LSEggNavigationVC.m in Sources */,
 				F3F9A2FA22CC53B1002870CC /* LSEggDetailNavView.m in Sources */,
+				F30698E122CDA15800432E9A /* LSEggLocationManager.m in Sources */,
+				F334071822CDD56700E0D6E7 /* LSEggFMDBManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

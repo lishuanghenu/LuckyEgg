@@ -9,7 +9,11 @@
 #import "LSEggDetailVC.h"
 #import "LSEggDetailCell.h"
 #import "LSEggDetailNavView.h"
+#import "LSEggDetailVM.h"
 #import "Masonry.h"
+#import "LSEggDetailModel.h"
+#import "LSEggUserLoacltionModel.h"
+#import <ReactiveObjC.h>
 
 #define kLSEggDetailVCWidthPadding (15)
 
@@ -27,14 +31,29 @@
 
 @property (nonatomic, strong) NSArray *weatherArray;
 
+@property (nonatomic, strong) LSEggDetailVM *viewModel ;
+
 @end
 
 @implementation LSEggDetailVC
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.viewModel = [LSEggDetailVM new];
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self buildUI];
-    [self loadData:@""];
+    @weakify(self);
+    [RACObserve(self.viewModel, detailModel) subscribeNext:^(id  _Nullable x) {
+        @strongify(self);
+        [self loadData:self.viewModel.detailModel];
+    }];
 }
 
 #pragma mark ----- Private  -----
@@ -73,12 +92,26 @@
 
 - (void)loadData:(id)data
 {
-    self.liveLabel.text = @"空气好，可以外出活动";
-    self.windLabel.text = @"风呼呼的吹";
-    self.temperatureLabel.text = @"26°";
+    if ([data isKindOfClass:[LSEggDetailModel class]]) {
+        LSEggDetailModel *detailModel = (id)data;
+        if (detailModel.data.count > 0) {
+            LSEggDayWeatherModel *todayModel = detailModel.data.firstObject;
+            self.liveLabel.text  = todayModel.air_tips;
+            self.windLabel.text = todayModel.win.firstObject;
+            self.temperatureLabel.text = todayModel.tem_now;
+            [self.navView loadData:detailModel.city];
+            
+        }
+    }
     self.firstPoetryLabel.text = @"明月松间照";
     self.secondPoetryLabel.text = @"清泉石上流";
-    [self.navView loadData:@""];
+}
+
+- (void)loadLocationModel:(LSEggUserLoacltionModel *)localtionModel
+{
+    if (localtionModel && [localtionModel isKindOfClass:[LSEggUserLoacltionModel class]]) {
+        [self.viewModel loadDataWithCityId:localtionModel.cityid];
+    }
 }
 
 #pragma mark ----- TableView Delegate  -----

@@ -10,7 +10,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class LSEggDetailModel;
 @interface LSEggDetailVM : NSObject
+@property (nonatomic, strong) LSEggDetailModel *detailModel;
+
+- (void)loadDataWithCityId:(NSString *)cityId;
 
 @end
 
